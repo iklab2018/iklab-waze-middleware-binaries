@@ -1,0 +1,42 @@
+{
+  "name": "IKLab Waze Middleware",
+  "version": "v1.0.0",
+  "factory": true,
+  "certificate": null,
+  "webservice": {
+    "enable": false,
+    "host": "0.0.0.0",
+    "port": 8889,
+    "debug": false,
+    "sio": {
+      "enable": false,
+      "async_mode": "eventlet",
+      "message_queue": "redis://localhost:6379/0"
+    },
+    "logger": {
+      "enable": true,
+      "name": "iklab_webservice",
+      "level": "ERROR",
+      "backup": 7
+    },
+    "captcha": {
+      "enable": false,
+      "provider": null,
+      "hosts": {}
+    }
+  },
+  "manager": {
+    "enable": true,
+    "logger": {
+      "enable": true,
+      "name": "iklab_manager",
+      "level": "ERROR",
+      "backup": 7
+    }
+  },
+  "database": {
+    "enable": true,
+    "engine": "SQLITE3",
+    "name": "iklab"
+  }
+}

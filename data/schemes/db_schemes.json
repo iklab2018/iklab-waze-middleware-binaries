@@ -1,0 +1,26 @@
+[
+  {
+    "name": "iklab",
+    "options": [],
+    "connection": {
+      "engine": "SQLITE3"
+    },
+    "models": {
+      "iklab_client": {"enable": true, "src": "iklab_client.sql"},
+      "iklab_location": {"enable": true, "src": "iklab_location.sql"},
+      "iklab_device": {"enable": true, "src": "iklab_device.sql"},
+      "iklab_license": {"enable": true, "src": "iklab_license.sql"},
+      "iklab_environment": {"enable": true, "src": "iklab_environment.sql"},
+      "iklab_thirdparty": {"enable": true, "src": "iklab_thirdparty.sql"},
+      "iklab_smtp": {"enable": true, "src": "iklab_smtp.sql"},
+      "iklab_type_alert": {"enable": true, "src": "iklab_type_alert.sql"},
+      "iklab_alert": {"enable": true, "src": "iklab_alert.sql"},
+      "iklab_languages": {"enable": true, "src": "iklab_languages.sql"},
+      "iklab_countries": {"enable": true, "src": "iklab_countries.sql"},
+      "iklab_timezones": {"enable": true, "src": "iklab_timezones.sql"},
+      "iklab_thirdparty_buffer": {"enable": true, "src": "iklab_thirdparty_buffer.sql"},
+      "iklab_geolocation_reference": {"enable": true, "src": "iklab_geolocation_reference.sql"},
+      "iklab_user": {"enable": true, "src": "iklab_user.sql"}
+    }
+  }
+]

@@ -1,0 +1,21 @@
+CREATE TABLE IF NOT EXISTS "iklab_alert" (
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "waze_uuid" TEXT CHECK( LENGTH("waze_uuid") <= 400 ) NOT NULL UNIQUE,
+    "waze_type" TEXT CHECK( LENGTH("waze_type") <= 150 ) NOT NULL,
+    "waze_subtype" TEXT CHECK( LENGTH("waze_subtype") <= 150 ) NOT NULL,
+    "client_id" TEXT CHECK( LENGTH("client_id") <= 200 ) NOT NULL,
+    "location_id" TEXT CHECK( LENGTH("location_id") <= 200 ) NOT NULL,
+    "device_id" TEXT CHECK( LENGTH("device_id") <= 200 ) NULL DEFAULT NULL,
+    "pub_timestamp" INTEGER NOT NULL,
+    "pub_datetime" TEXT NOT NULL,
+    "report_datetime" TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "timezone" TEXT CHECK( LENGTH("timezone") <= 250 ) NOT NULL DEFAULT 'UTC',
+    "geo_lat" REAL NOT NULL,
+    "geo_lon" REAL NOT NULL,
+    "score" INTEGER NULL DEFAULT NULL,
+    "distance_from_device" REAL NULL DEFAULT NULL,
+    "data_source" TEXT NULL DEFAULT NULL,
+    FOREIGN KEY ("client_id") REFERENCES "iklab_client" ("client_id") ON DELETE RESTRICT,
+    FOREIGN KEY ("location_id") REFERENCES "iklab_location" ("location_id") ON DELETE RESTRICT,
+    FOREIGN KEY ("waze_type", "waze_subtype") REFERENCES "iklab_type_alert" ("waze_type", "waze_subtype") ON DELETE RESTRICT
+)

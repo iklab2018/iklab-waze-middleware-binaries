@@ -1,0 +1,102 @@
+{
+  "city": {
+    "en": "City",
+    "es": "Ciudad",
+    "it": "Città"
+  },
+  "street": {
+    "en": "Street",
+    "es": "Calle",
+    "it": "Via"
+  },
+  "location": {
+    "en": "Location",
+    "es": "Localización",
+    "it": "Posizione"
+  },
+  "device": {
+    "en": "Device",
+    "es": "Dispositivo",
+    "it": "Dispositivo"
+  },
+  "waze-alert": {
+    "en": "Waze Alert",
+    "es": "Alerta Waze",
+    "it": "Allarme Waze"
+  },
+  "alert-type": {
+    "en": "Alert Type",
+    "es": "Tipo de Alerta",
+    "it": "Tipo di Allarme"
+  },
+  "geolocation": {
+    "en": "Geolocation",
+    "es": "Geolocalización",
+    "it": "Geolocalizzazione"
+  },
+  "coordinates": {
+    "en": "Coordinates",
+    "es": "Coordenadas",
+    "it": "Coordinate"
+  },
+  "latitude": {
+    "en": "Latitude",
+    "es": "Latitud",
+    "it": "Latitudine"
+  },
+  "longitude": {
+    "en": "Longitude",
+    "es": "Longitud",
+    "it": "Longitudine"
+  },
+  "distance": {
+    "en": "Distance",
+    "es": "Distancia",
+    "it": "Distanza"
+  },
+  "meters": {
+    "en": "Meters",
+    "es": "Metros",
+    "it": "Metri"
+  },
+  "reliability": {
+    "en": "Reliability",
+    "es": "Fiabilidad",
+    "it": "Affidabilità"
+  },
+  "score": {
+    "en": "Score",
+    "es": "Puntuación",
+    "it": "Punteggio"
+  },
+  "published": {
+    "en": "Published",
+    "es": "Publicado",
+    "it": "Pubblicato"
+  },
+  "address": {
+    "en": "Address",
+    "es": "Dirección",
+    "it": "Indirizzo"
+  },
+  "no_device_nearby": {
+    "en": "No device nearby",
+    "es": "Sin dispositivo cerca",
+    "it": "Nessun dispositivo nelle vicinanze"
+  },
+  "georeference": {
+    "en": "Reference",
+    "es": "Referencia",
+    "it": "Riferimento"
+  },
+  "no_georeference": {
+    "en": "No reference",
+    "es": "Sin referencia",
+    "it": "Nessun riferimento"
+  },
+  "waze-alert-prefix": {
+    "en": "Waze - Alert",
+    "es": "Waze - Alerta",
+    "it": "Waze - Allerta"
+  }
+}
